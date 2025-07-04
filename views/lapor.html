@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lapor Bug/Issue</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: #eee;
+      color: #000;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    h1, h4, p, a {
+      margin: 0 0 10px 0;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #aaa;
+      font-family: monospace;
+      font-size: 1em;
+      background-color: #fff;
+      color: #000;
+      outline: none;
+      box-shadow: none;
+      transition: none;
+    }
+
+    input::placeholder {
+      color: #888;
+    }
+
+    button {
+      background-color: #ccc;
+      color: #000;
+      border: 1px solid #aaa;
+      padding: 6px 15px;
+      font-family: monospace;
+      font-size: 1em;
+      cursor: default;
+      outline: none;
+      box-shadow: none;
+      transition: none;
+    }
+
+    button:active, button:focus, input:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: blue;
+    }
+
+    a:hover, button:hover, input:hover {
+      background-color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lapor Bug/Issue</h1>
+    <p>Email: <a href="mailto:rizkyrajamikrotik@proton.me">rizkyrajamikrotik@proton.me</a></p>
+    <p>Laporkan Halaman Judi / Vulgar</p>
+
+    <form method="POST" action="/api/lapor">
+      <h4>Form pelaporan</h4>
+      <input name="laporan" type="text" placeholder="laporkan halaman, contoh /judi.html">
+      <br>
+      <button type="submit">Kirim</button>
+    </form>
+
+    <br>
+    <a href="/">Kembali</a>
+  </div>
+</body>
+</html>
